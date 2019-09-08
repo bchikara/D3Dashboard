@@ -1,0 +1,62 @@
+
+circle{
+    text-align: center;
+    margin:  auto;
+    display: block;
+}
+text {
+    font: 10px sans-serif;
+  
+  }
+
+  .node {
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  .node:hover {
+    opacity: 0.8;
+  }
+  
+  .node--leaf {
+    fill: #fff;
+    opacity: 0;
+  } 
+  
+  .label {
+    font: 12px "Maison Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+  /*   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; */
+  }
+ 
+  .label,
+  .node--root,
+  .node--leaf {
+    pointer-events: none;
+  }
+
+  .center{
+      display: block;
+      margin:0 auto;
+  }
+ 
+ 
+  text{
+      fill:black
+  }
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+  
+
+
+

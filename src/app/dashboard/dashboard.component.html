@@ -1,0 +1,13 @@
+<div class="grid">
+
+    <div class="grid-col-1">
+        <app-sidebar (chartSelected)="onNavigate($event)"></app-sidebar>
+    </div>
+
+    <div class="grid-col-2">
+        <app-tabs (buildingSelected)="change($event)"></app-tabs>
+        <app-bubblechart [building]="building" *ngIf="loadedChart !== 'Topology'"></app-bubblechart>
+        <app-link-chart [building]="building" *ngIf="loadedChart === 'Topology'"></app-link-chart>
+    </div>
+
+</div>

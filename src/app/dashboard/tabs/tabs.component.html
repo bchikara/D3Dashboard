@@ -1,0 +1,9 @@
+<mat-tab-group mat-align-tabs="center" [color]="accent" class="example-container">
+    <mat-tab class="mattabs" *ngFor="let building of buildings">
+        <ng-template mat-tab-label >
+            <div (click)="select(building.id)">
+             <a><mat-icon class="icons">account_balance</mat-icon><span class="text">{{building.name}}</span></a>   
+            </div>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>  

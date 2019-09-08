@@ -1,0 +1,10 @@
+
+<div class="icon">
+    <mat-icon>search</mat-icon>
+</div>
+
+<div id="svg">
+    <div *ngFor="let svg of svgs" class="svgs">
+        <img width="24" src="{{svg.src}}" (click)="icon(svg.name)"><br><br>
+    </div>
+</div>
